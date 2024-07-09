@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.background-image {
+  padding: 3rem;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Aligne les éléments en colonne */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  padding: 3rem;
+  position: relative;
+  z-index: 2;
+  max-width: 1300px;
+  margin: 0 auto 2rem auto; /* Centre et ajoute une marge en bas */
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+.content ol[type="1"] li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #555555;
+  position: fixed;
+  z-index: 3;
+  flex-direction: column; /* Disposer les éléments verticalement */
+  align-items: center; /* Centrer les éléments horizontalement */
+}
+
+.navbar ul,
+.navbar li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar li a:hover {
+  background-color: #c29494;
+}
+
+/* Dropdown menu styles */
+.navbar li ul {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.navbar li:hover ul {
+  display: block;
+}
+
+.navbar li ul li {
+  float: none;
+}
+
+.navbar li ul li a {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  text-align: left;
+}
+
+.navbar li ul li a:hover {
+  background-color: #ddd;
+}
+
+/* Carousel styles */
+.carousel-container {
+  width: 100%;
+  max-width: 710px; /* Limite la largeur pour qu'elle corresponde à celle de .content */
+  margin: 0 auto; /* Centre le carrousel */
+  position: relative;
+  z-index: 1;
+  padding: 2rem 0;
+}
+.carousel-caption {
+  position: absolute; /* Position absolue pour se superposer à l'image */
+  right: -25%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  width: 70%; 
+  height: 23%;
+  color: #fff; /* Couleur du texte */
+  text-align: center; /* Centrer le texte horizontalement */
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption h3 {
+  font-size: 1.35rem; /* Taille du titre */
+  font-weight: bold; /* Gras pour l'impact */
+  margin-bottom: 0px; /* Espacement en bas du titre */
+}
+
+.carousel-caption p {
+  font-size: 1.25rem; /* Taille du texte */
+  line-height: 1.6; /* Espacement entre les lignes */
+}

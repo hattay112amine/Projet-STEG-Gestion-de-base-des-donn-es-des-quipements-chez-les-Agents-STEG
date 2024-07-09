@@ -1,0 +1,47 @@
+/* Centrage vertical et horizontal */
+.container2 {
+  height: 110vh; /* Hauteur de la fenêtre visible */
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  background-color: #e9ecef; /* Fond gris clair */
+  padding: 20px; /* Ajouter un peu d'espace autour du contenu */
+}
+
+/* Ajustement de la largeur des dropdowns */
+.col-md-6 {
+  width: 100%; /* Pour s'assurer que chaque dropdown occupe toute la largeur */
+  margin-bottom: 100px; /* Espacement entre les colonnes */
+}
+
+/* Espacement entre les dropdowns */
+.row {
+  margin-bottom: 100px; /* Espacement entre les lignes */
+}
+
+/* Styling for Dropdown.Toggle */
+.dropdown-toggle {
+  background-color: #343a40;
+  color: #ffffff;
+  border-color: #343a40;
+}
+
+.dropdown-toggle:hover {
+  background-color: #23272b;
+  color: #ffffff;
+  border-color: #23272b;
+}
+
+/* Styling for Dropdown.Menu */
+.dropdown-menu {
+  background-color: #343a40;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+
+.dropdown-item:hover {
+  background-color: #23272b;
+  color: #ffffff;
+}

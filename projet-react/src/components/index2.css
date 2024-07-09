@@ -1,0 +1,129 @@
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Permet de faire défiler horizontalement si nécessaire */
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #3498db; /* Bordure bleue autour du tableau */
+    border-radius: 8px; /* Coins arrondis pour le tableau */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Bordure légère entre les lignes */
+}
+
+.custom-table th {
+    background-color: #3498db; /* Fond bleu pour l'en-tête */
+    color: white; /* Texte blanc pour contraste */
+    font-weight: bold;
+    text-transform: uppercase; /* Texte en majuscules */
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fond gris clair pour lignes paires */
+}
+
+.custom-table tbody tr:hover {
+    background-color: #cce5ff; /* Fond bleu clair au survol */
+}
+
+.custom-table td {
+    font-size: 14px; 
+}
+
+h1 {
+    color: #3498db;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group-append {
+    margin-left: 5px;
+}
+@media print {
+    .btn {
+      display: none; /* Hide the print button when printing */
+    }
+    
+    body {
+      font-size: 12pt; /* Adjust font size for better readability when printed */
+    }
+  
+    /* Hide non-essential elements */
+    .navbar {
+      display: none; /* Hide the navbar in print mode */
+    }
+  
+    /* Adjust table styles for printing */
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+  
+    .custom-table th, .custom-table td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    
+    /* Example of hiding specific elements */
+    .extra-details {
+      display: none; /* Hide extra details specific to screen viewing */
+    }
+    
+    /* Ensure no background colors or images are printed */
+    body {
+      background: none;
+    }
+  
+    /* Ensure links are not underlined when printed */
+    a {
+      text-decoration: none;
+    }
+  
+    /* Adjust margins for printing */
+    @page {
+      margin: 2cm; /* Adjust page margins as needed */
+    }
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 115px;
+    margin-left: 40px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+  
+  .logo-container img {
+    max-width: 30%; 
+    height: 30%;
+  }
+  
+  @media print {
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+    }
+  
+    .logo-container img {
+      max-width: 50%; 
+      height: auto;
+    }
+  }
